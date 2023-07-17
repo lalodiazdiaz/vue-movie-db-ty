@@ -22,6 +22,7 @@
 }
 body {
   background-color: #35495e;
+  -ms-overflow-style: none;
 }
 
 a {
