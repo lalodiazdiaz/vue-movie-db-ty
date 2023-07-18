@@ -60,7 +60,6 @@ export default {
     display: flex;
     width: 100%;
     margin-top: 20px;
-    background-color: rebeccapurple;
     @media (max-width: 900px) {
       flex-direction: column;
     }
