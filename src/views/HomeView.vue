@@ -46,10 +46,11 @@ export default {
   setup() {
     const search = ref("");
     const movies = ref([]);
+    const url = "http://www.omdbapi.com/?";
 
     const searchMovies = () => {
       if (search.value != "") {
-        fetch(`http://www.omdbapi.com/?apikey=${env.apikey}&s=${search.value}`)
+        fetch(`${url}apikey=${env.apikey}&s=${search.value}`)
           .then((response) => response.json())
           .then((data) => {
             movies.value = data.Search;
